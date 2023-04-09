@@ -21,7 +21,7 @@ struct SignInButton: View {
         .background(
             LinearGradient(
                 colors: [
-                    .red,
+                    .black,
                     .blue
                 ],
                 startPoint: .leading,

@@ -8,18 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		E6B08A2D29E11D0C003D7697 /* PolytechLogo.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6B08A2C29E11D0C003D7697 /* PolytechLogo.swift */; };
-		E6B08A2F29E11E75003D7697 /* SignInForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6B08A2E29E11E75003D7697 /* SignInForm.swift */; };
 		E6B08A3329E120A3003D7697 /* MyTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6B08A3229E120A3003D7697 /* MyTextField.swift */; };
 		E6B08A3729E128D1003D7697 /* SignInButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6B08A3629E128D1003D7697 /* SignInButton.swift */; };
 		E6B1D4C829E0246400A1858A /* KillTheDebtorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6B1D4C729E0246400A1858A /* KillTheDebtorApp.swift */; };
 		E6B1D4CA29E0246400A1858A /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6B1D4C929E0246400A1858A /* SignInView.swift */; };
 		E6B1D4CC29E0246500A1858A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E6B1D4CB29E0246500A1858A /* Assets.xcassets */; };
 		E6B1D4D029E0246500A1858A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E6B1D4CF29E0246500A1858A /* Preview Assets.xcassets */; };
+		E6DC9EC129E31E7E00C9B9F3 /* DisciplineListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6DC9EC029E31E7E00C9B9F3 /* DisciplineListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		E6B08A2C29E11D0C003D7697 /* PolytechLogo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PolytechLogo.swift; sourceTree = "<group>"; };
-		E6B08A2E29E11E75003D7697 /* SignInForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInForm.swift; sourceTree = "<group>"; };
 		E6B08A3229E120A3003D7697 /* MyTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTextField.swift; sourceTree = "<group>"; };
 		E6B08A3629E128D1003D7697 /* SignInButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInButton.swift; sourceTree = "<group>"; };
 		E6B1D4C429E0246400A1858A /* KillTheDebtor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KillTheDebtor.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -28,6 +27,7 @@
 		E6B1D4CB29E0246500A1858A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E6B1D4CD29E0246500A1858A /* KillTheDebtor.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = KillTheDebtor.entitlements; sourceTree = "<group>"; };
 		E6B1D4CF29E0246500A1858A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E6DC9EC029E31E7E00C9B9F3 /* DisciplineListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisciplineListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,27 +41,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		E6B08A3029E11E7F003D7697 /* SignInScreen */ = {
+		E6B08A3029E11E7F003D7697 /* SignInView */ = {
 			isa = PBXGroup;
 			children = (
 				E6B08A3529E121D2003D7697 /* ViewModel */,
 				E6B08A3429E121CA003D7697 /* View */,
 			);
-			path = SignInScreen;
-			sourceTree = "<group>";
-		};
-		E6B08A3129E11E9F003D7697 /* Modules */ = {
-			isa = PBXGroup;
-			children = (
-				E6B08A2E29E11E75003D7697 /* SignInForm.swift */,
-			);
-			path = Modules;
+			path = SignInView;
 			sourceTree = "<group>";
 		};
 		E6B08A3429E121CA003D7697 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				E6B08A3129E11E9F003D7697 /* Modules */,
 				E6B1D4D629E025F000A1858A /* Components */,
 				E6B1D4C929E0246400A1858A /* SignInView.swift */,
 			);
@@ -94,7 +85,8 @@
 		E6B1D4C629E0246400A1858A /* KillTheDebtor */ = {
 			isa = PBXGroup;
 			children = (
-				E6B08A3029E11E7F003D7697 /* SignInScreen */,
+				E6DC9EBE29E31E3500C9B9F3 /* DisciplineListView */,
+				E6B08A3029E11E7F003D7697 /* SignInView */,
 				E6B1D4C729E0246400A1858A /* KillTheDebtorApp.swift */,
 				E6B1D4CB29E0246500A1858A /* Assets.xcassets */,
 				E6B1D4CD29E0246500A1858A /* KillTheDebtor.entitlements */,
@@ -119,6 +111,22 @@
 				E6B08A3629E128D1003D7697 /* SignInButton.swift */,
 			);
 			path = Components;
+			sourceTree = "<group>";
+		};
+		E6DC9EBE29E31E3500C9B9F3 /* DisciplineListView */ = {
+			isa = PBXGroup;
+			children = (
+				E6DC9EBF29E31E6800C9B9F3 /* New Group */,
+			);
+			path = DisciplineListView;
+			sourceTree = "<group>";
+		};
+		E6DC9EBF29E31E6800C9B9F3 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+				E6DC9EC029E31E7E00C9B9F3 /* DisciplineListView.swift */,
+			);
+			path = "New Group";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -194,8 +202,8 @@
 				E6B08A3329E120A3003D7697 /* MyTextField.swift in Sources */,
 				E6B1D4CA29E0246400A1858A /* SignInView.swift in Sources */,
 				E6B08A2D29E11D0C003D7697 /* PolytechLogo.swift in Sources */,
+				E6DC9EC129E31E7E00C9B9F3 /* DisciplineListView.swift in Sources */,
 				E6B1D4C829E0246400A1858A /* KillTheDebtorApp.swift in Sources */,
-				E6B08A2F29E11E75003D7697 /* SignInForm.swift in Sources */,
 				E6B08A3729E128D1003D7697 /* SignInButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

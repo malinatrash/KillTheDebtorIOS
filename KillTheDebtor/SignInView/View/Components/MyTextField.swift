@@ -24,11 +24,11 @@ struct GradientTextFieldBackground: TextFieldStyle {
     // Hidden function to conform to this protocol
     func _body(configuration: TextField<Self._Label>) -> some View {
         ZStack {
-            RoundedRectangle(cornerRadius: 5.0)
+            RoundedRectangle(cornerRadius: 15.0)
                 .stroke(
                     LinearGradient(
                         colors: [
-                            .red,
+                            .black,
                             .blue
                         ],
                         startPoint: .leading,
