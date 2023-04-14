@@ -18,10 +18,8 @@ struct MyTextField: View {
 }
 
 struct GradientTextFieldBackground: TextFieldStyle {
-    
     let systemImageString: String?
     
-    // Hidden function to conform to this protocol
     func _body(configuration: TextField<Self._Label>) -> some View {
         ZStack {
             RoundedRectangle(cornerRadius: 15.0)
@@ -39,7 +37,6 @@ struct GradientTextFieldBackground: TextFieldStyle {
             
             HStack {
                 Image(systemName: systemImageString ?? "")
-                // Reference the TextField here
                 configuration
             }
             .padding(.leading)

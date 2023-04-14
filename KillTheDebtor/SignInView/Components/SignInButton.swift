@@ -9,15 +9,13 @@ import SwiftUI
 
 struct SignInButton: View {
     @State private var isPressed = false
+    let action: () -> Void
     let title: String
     var body: some View {
-        Button(title) {
-            print("Button pressed!")
-        }
-        .frame(width: 120, height: 20)
+        Button(title, action: action)
+        .frame(width: 160, height: 50)
         .foregroundColor(.white)
         .font(.headline)
-        .padding()
         .background(
             LinearGradient(
                 colors: [
@@ -41,6 +39,10 @@ struct SignInButton: View {
 
 struct SignInButton_Previews: PreviewProvider {
     static var previews: some View {
-        SignInButton(title: "Войти")
+        SignInButton(action: testAction, title: "Войти")
     }
+}
+
+func testAction() {
+    
 }

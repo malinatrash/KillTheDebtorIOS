@@ -10,7 +10,7 @@ import SwiftUI
 struct DisciplineListView: View {
     let teacherName = "Вадим Аршинский"
      let disciplines = ["ООП", "Физика", "Математика", "Английский язык"]
-     
+    
      var body: some View {
          NavigationView {
              List(disciplines, id: \.self) { discipline in
