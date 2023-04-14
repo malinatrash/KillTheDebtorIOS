@@ -22,6 +22,7 @@
 		E65CEB2E29E98A910025C2FB /* GroupFabric.swift in Sources */ = {isa = PBXBuildFile; fileRef = E65CEB2D29E98A910025C2FB /* GroupFabric.swift */; };
 		E65CEB3029E98B5F0025C2FB /* StudentFabric.swift in Sources */ = {isa = PBXBuildFile; fileRef = E65CEB2F29E98B5F0025C2FB /* StudentFabric.swift */; };
 		E65CEB3229E98F700025C2FB /* AcademicPerformanceFabric.swift in Sources */ = {isa = PBXBuildFile; fileRef = E65CEB3129E98F700025C2FB /* AcademicPerformanceFabric.swift */; };
+		E65CEB3529E9B91B0025C2FB /* GroupListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E65CEB3429E9B91B0025C2FB /* GroupListView.swift */; };
 		E6B08A2D29E11D0C003D7697 /* PolytechLogo.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6B08A2C29E11D0C003D7697 /* PolytechLogo.swift */; };
 		E6B08A3329E120A3003D7697 /* MyTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6B08A3229E120A3003D7697 /* MyTextField.swift */; };
 		E6B08A3729E128D1003D7697 /* SignInButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6B08A3629E128D1003D7697 /* SignInButton.swift */; };
@@ -48,6 +49,7 @@
 		E65CEB2D29E98A910025C2FB /* GroupFabric.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupFabric.swift; sourceTree = "<group>"; };
 		E65CEB2F29E98B5F0025C2FB /* StudentFabric.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentFabric.swift; sourceTree = "<group>"; };
 		E65CEB3129E98F700025C2FB /* AcademicPerformanceFabric.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcademicPerformanceFabric.swift; sourceTree = "<group>"; };
+		E65CEB3429E9B91B0025C2FB /* GroupListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupListView.swift; sourceTree = "<group>"; };
 		E6B08A2C29E11D0C003D7697 /* PolytechLogo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PolytechLogo.swift; sourceTree = "<group>"; };
 		E6B08A3229E120A3003D7697 /* MyTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTextField.swift; sourceTree = "<group>"; };
 		E6B08A3629E128D1003D7697 /* SignInButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInButton.swift; sourceTree = "<group>"; };
@@ -107,6 +109,14 @@
 			path = Fabric;
 			sourceTree = "<group>";
 		};
+		E65CEB3329E9B6B90025C2FB /* GroupListView */ = {
+			isa = PBXGroup;
+			children = (
+				E65CEB3429E9B91B0025C2FB /* GroupListView.swift */,
+			);
+			path = GroupListView;
+			sourceTree = "<group>";
+		};
 		E6B08A3029E11E7F003D7697 /* SignInView */ = {
 			isa = PBXGroup;
 			children = (
@@ -135,8 +145,9 @@
 		E6B1D4C629E0246400A1858A /* KillTheDebtor */ = {
 			isa = PBXGroup;
 			children = (
-				E65CEB2829E927850025C2FB /* Fabric */,
 				E65CEB1729E90D3D0025C2FB /* Model */,
+				E65CEB2829E927850025C2FB /* Fabric */,
+				E65CEB3329E9B6B90025C2FB /* GroupListView */,
 				E6DC9EBE29E31E3500C9B9F3 /* DisciplineListView */,
 				E6B08A3029E11E7F003D7697 /* SignInView */,
 				E6B1D4C729E0246400A1858A /* KillTheDebtorApp.swift */,
@@ -256,6 +267,7 @@
 				E65CEB1B29E90EEE0025C2FB /* Discipline.swift in Sources */,
 				E65CEB1F29E924840025C2FB /* Student.swift in Sources */,
 				E65CEB1429E90B3E0025C2FB /* ImageView.swift in Sources */,
+				E65CEB3529E9B91B0025C2FB /* GroupListView.swift in Sources */,
 				E65CEB2129E925910025C2FB /* AcademicPerformance.swift in Sources */,
 				E65CEB3029E98B5F0025C2FB /* StudentFabric.swift in Sources */,
 				E65CEB1929E90D4D0025C2FB /* Teacher.swift in Sources */,

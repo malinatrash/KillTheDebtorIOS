@@ -7,7 +7,7 @@
 
 import Foundation
 
-class Group {
+class Group: Identifiable {
     var title: String
     var students: [Student]
     

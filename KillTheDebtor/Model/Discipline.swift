@@ -7,7 +7,7 @@
 
 import Foundation
 
-class Discipline {
+class Discipline: Identifiable {
     private var title: String
     private var groups: [Group]
     private var imageURL: String

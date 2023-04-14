@@ -7,39 +7,55 @@
 
 import Foundation
 
-class Teacher: Codable {
+class Teacher {
     
-    var disciplines: [Discipline] {
-        get { return self.disciplines }
-        set { self.disciplines = newValue }
+    private var disciplines: [Discipline]
+    private var firstname: String
+    private var lastname: String
+    private var login: String
+    private var password: String
+    private var thirdname: String
+    
+    public func getDisciplines() -> [Discipline] {
+        disciplines
+    }
+    public func setDisciplines(_ disciplines: [Discipline]) {
+        self.disciplines = disciplines
+    }
+    public func getFirstname() -> String {
+        firstname
+    }
+    public func setFirstname(_ firstname: String) {
+        self.firstname = firstname
+    }
+    public func getLastname() -> String {
+        lastname
+    }
+    public func setLastname(_ lastname: String) {
+        self.lastname = lastname
+    }
+    public func getLogin() -> String {
+        login
+    }
+    public func setLogin(_ login: String) {
+        self.login = login
+    }
+    public func getPassword() -> String {
+        password
+    }
+    public func setPassword(_ password: String) {
+        self.password = password
+    }
+    public func getThirdname() -> String {
+        thirdname
+    }
+    public func setThirdname(_ thirdname: String) {
+        self.thirdname = thirdname
     }
     
-    var firstname: String {
-        get { return self.firstname }
-        set { self.firstname = newValue }
-    }
+//    init() {}
     
-    var lastname: String {
-        get { return self.lastname }
-        set { self.lastname = newValue }
-    }
-    
-    var login: String {
-        get { return self.login }
-        set { self.login = newValue }
-    }
-    
-    var password: String {
-        get { return self.password }
-        set { self.password = newValue }
-    }
-    
-    var thirdname: String {
-        get { return self.thirdname }
-        set { self.thirdname = newValue }
-    }
-    
-    init(login: String, password: String, firstname: String, lastname: String, thirdname: String, disciplines: [Discipline]) {
+    init(_ login: String, _ password: String, _ firstname: String, _ lastname: String, _ thirdname: String, _ disciplines: [Discipline]) {
         self.login = login
         self.password = password
         self.firstname = firstname
@@ -47,7 +63,5 @@ class Teacher: Codable {
         self.thirdname = thirdname
         self.disciplines = disciplines
     }
-    
-    init() {}
 }
 

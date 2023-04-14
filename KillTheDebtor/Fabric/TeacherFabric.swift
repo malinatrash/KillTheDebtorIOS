@@ -11,44 +11,44 @@ public class TeacherFabric {
     static let shared = TeacherFabric()
 
     let arsh = Teacher(
-        username: "arsh",
-        password: "pas",
-        firstName: "Вадим",
-        lastName: "Аршинский",
-        middleName: "Леонидович",
-        disciplines: DisciplineFabric.shared.getDisciplinesArsh()
+        "arsh",
+        "pas",
+        "Вадим",
+        "Аршинский",
+        "Леонидович",
+        DisciplineFabric.shared.getDisciplinesArsh()
     )
     let katash = Teacher(
-        username: "katash",
-        password: "pas",
-        firstName: "Михаил",
-        lastName: "Каташевцев",
-        middleName: "Дмитриевич",
-        disciplines: DisciplineFabric.shared.getDisciplinesKatash()
+        "katash",
+        "pas",
+        "Михаил",
+        "Каташевцев",
+        "Дмитриевич",
+        DisciplineFabric.shared.getDisciplinesKatash()
     )
     let buch = Teacher(
-        username: "buch",
-        password: "pas",
-        firstName: "Олег",
-        lastName: "Бучнев",
-        middleName: "Сергеевич",
-        disciplines: DisciplineFabric.shared.getDisciplinesBuch()
+        "buch",
+        "pas",
+        "Олег",
+        "Бучнев",
+        "Сергеевич",
+        DisciplineFabric.shared.getDisciplinesBuch()
     )
     let malan = Teacher(
-        username: "malan",
-        password: "pas",
-        firstName: "Татьяна",
-        lastName: "Маланова",
-        middleName: "Валерьевна",
-        disciplines: DisciplineFabric.shared.getDisciplinesMalan()
+        "malan",
+        "pas",
+        "Татьяна",
+        "Маланова",
+        "Валерьевна",
+        DisciplineFabric.shared.getDisciplinesMalan()
     )
     let petrov = Teacher(
-        username: "petrov",
-        password: "pas",
-        firstName: "Павел",
-        lastName: "Петров",
-        middleName: "Александрович",
-        disciplines: DisciplineFabric.shared.getDisciplinesPetrov()
+        "petrov",
+        "pas",
+        "Павел",
+        "Петров",
+        "Александрович",
+        DisciplineFabric.shared.getDisciplinesPetrov()
     )
 
     var teachers: [Teacher] {

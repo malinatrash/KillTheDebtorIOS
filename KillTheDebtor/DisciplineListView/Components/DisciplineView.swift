@@ -7,22 +7,30 @@
 
 import SwiftUI
 
-import SwiftUI
-
 struct DisciplineView: View {
-    let title: String
-    let imageURL: String
+    let discipline: Discipline
     var body: some View {
-        HStack {
-            Text(title).font(.title)
-            Spacer()
-            ImageView(imageURL: imageURL)
-        }.padding(.horizontal, 30)
+        VStack {
+            HStack {
+                VStack {
+                    HStack {
+                        Text(discipline.getTitle())
+                        Spacer()
+                    }
+                    HStack {
+                        Text("Количество групп: \(discipline.getGroupsCount())")
+                        Spacer()
+                    }
+                    .padding(.top, 3)
+                }
+                ImageView(imageURL: discipline.getImageURL())
+            }
+        }
     }
 }
 
 struct DisciplineView_Previews: PreviewProvider {
     static var previews: some View {
-        DisciplineView(title: "", imageURL: "")
+        DisciplineView(discipline: DisciplineFabric.shared.getDisciplinesArsh()[0])
     }
 }

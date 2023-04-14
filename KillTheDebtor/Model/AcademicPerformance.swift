@@ -17,7 +17,7 @@ public class AcademicPerformance {
         self.disciplineTitle = disciplineTitle
         self.debts = debts
         self.measure = measure
-        self.grade = Performance(measure: measure)
+        self.grade = Performance(measure)
     }
     
     func setPerformance(grade: Performance) {

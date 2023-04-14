@@ -8,20 +8,25 @@
 import SwiftUI
 
 struct DisciplineListView: View {
-    let teacherName = "Вадим Аршинский"
-     let disciplines = ["ООП", "Физика", "Математика", "Английский язык"]
     
-     var body: some View {
-         NavigationView {
-             List(disciplines, id: \.self) { discipline in
-                 NavigationLink(destination: Text(discipline)) {
-                     Text(discipline)
-                 }
-             }
-             .navigationTitle(teacherName)
-         }
-     }
- }
+    let teacher = TeacherFabric.shared.getTeacherArsh()
+    
+    
+    var body: some View {
+        NavigationView {
+            List(teacher.getDisciplines()) { discipline in
+                NavigationLink {
+                    GroupListView(discipline: discipline)
+                } label: {
+                    DisciplineView(discipline: discipline)
+                }
+            }
+        }
+        .navigationTitle("\(teacher.getFirstname()) \(teacher.getLastname())")
+        .navigationBarTitleDisplayMode(.large)
+    }
+}
+
 
 struct DisciplineListView_Previews: PreviewProvider {
     static var previews: some View {
