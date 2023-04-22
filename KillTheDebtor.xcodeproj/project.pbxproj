@@ -23,6 +23,11 @@
 		E65CEB3029E98B5F0025C2FB /* StudentFabric.swift in Sources */ = {isa = PBXBuildFile; fileRef = E65CEB2F29E98B5F0025C2FB /* StudentFabric.swift */; };
 		E65CEB3229E98F700025C2FB /* AcademicPerformanceFabric.swift in Sources */ = {isa = PBXBuildFile; fileRef = E65CEB3129E98F700025C2FB /* AcademicPerformanceFabric.swift */; };
 		E65CEB3529E9B91B0025C2FB /* GroupListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E65CEB3429E9B91B0025C2FB /* GroupListView.swift */; };
+		E65CEB3729E9BCA40025C2FB /* GroupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E65CEB3629E9BCA40025C2FB /* GroupView.swift */; };
+		E65CEB3A29E9BD730025C2FB /* StudentListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E65CEB3929E9BD730025C2FB /* StudentListView.swift */; };
+		E65CEB3C29E9BD7D0025C2FB /* StudentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E65CEB3B29E9BD7D0025C2FB /* StudentView.swift */; };
+		E65CEB3F29E9BDB90025C2FB /* StateManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E65CEB3E29E9BDB90025C2FB /* StateManager.swift */; };
+		E698710729F3983F001A1344 /* LoginManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E698710629F3983F001A1344 /* LoginManager.swift */; };
 		E6B08A2D29E11D0C003D7697 /* PolytechLogo.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6B08A2C29E11D0C003D7697 /* PolytechLogo.swift */; };
 		E6B08A3329E120A3003D7697 /* MyTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6B08A3229E120A3003D7697 /* MyTextField.swift */; };
 		E6B08A3729E128D1003D7697 /* SignInButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6B08A3629E128D1003D7697 /* SignInButton.swift */; };
@@ -50,6 +55,11 @@
 		E65CEB2F29E98B5F0025C2FB /* StudentFabric.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentFabric.swift; sourceTree = "<group>"; };
 		E65CEB3129E98F700025C2FB /* AcademicPerformanceFabric.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcademicPerformanceFabric.swift; sourceTree = "<group>"; };
 		E65CEB3429E9B91B0025C2FB /* GroupListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupListView.swift; sourceTree = "<group>"; };
+		E65CEB3629E9BCA40025C2FB /* GroupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupView.swift; sourceTree = "<group>"; };
+		E65CEB3929E9BD730025C2FB /* StudentListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentListView.swift; sourceTree = "<group>"; };
+		E65CEB3B29E9BD7D0025C2FB /* StudentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentView.swift; sourceTree = "<group>"; };
+		E65CEB3E29E9BDB90025C2FB /* StateManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateManager.swift; sourceTree = "<group>"; };
+		E698710629F3983F001A1344 /* LoginManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginManager.swift; sourceTree = "<group>"; };
 		E6B08A2C29E11D0C003D7697 /* PolytechLogo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PolytechLogo.swift; sourceTree = "<group>"; };
 		E6B08A3229E120A3003D7697 /* MyTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTextField.swift; sourceTree = "<group>"; };
 		E6B08A3629E128D1003D7697 /* SignInButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInButton.swift; sourceTree = "<group>"; };
@@ -113,8 +123,35 @@
 			isa = PBXGroup;
 			children = (
 				E65CEB3429E9B91B0025C2FB /* GroupListView.swift */,
+				E65CEB3629E9BCA40025C2FB /* GroupView.swift */,
 			);
 			path = GroupListView;
+			sourceTree = "<group>";
+		};
+		E65CEB3829E9BD550025C2FB /* StudentListView */ = {
+			isa = PBXGroup;
+			children = (
+				E65CEB4029E9BEA50025C2FB /* Components */,
+				E65CEB3929E9BD730025C2FB /* StudentListView.swift */,
+			);
+			path = StudentListView;
+			sourceTree = "<group>";
+		};
+		E65CEB3D29E9BDAC0025C2FB /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				E65CEB3E29E9BDB90025C2FB /* StateManager.swift */,
+				E698710629F3983F001A1344 /* LoginManager.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		E65CEB4029E9BEA50025C2FB /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				E65CEB3B29E9BD7D0025C2FB /* StudentView.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 		E6B08A3029E11E7F003D7697 /* SignInView */ = {
@@ -145,8 +182,10 @@
 		E6B1D4C629E0246400A1858A /* KillTheDebtor */ = {
 			isa = PBXGroup;
 			children = (
+				E65CEB3D29E9BDAC0025C2FB /* Services */,
 				E65CEB1729E90D3D0025C2FB /* Model */,
 				E65CEB2829E927850025C2FB /* Fabric */,
+				E65CEB3829E9BD550025C2FB /* StudentListView */,
 				E65CEB3329E9B6B90025C2FB /* GroupListView */,
 				E6DC9EBE29E31E3500C9B9F3 /* DisciplineListView */,
 				E6B08A3029E11E7F003D7697 /* SignInView */,
@@ -258,16 +297,21 @@
 				E65CEB2329E925B30025C2FB /* Measure.swift in Sources */,
 				E65CEB1D29E90FC20025C2FB /* Group.swift in Sources */,
 				E65CEB3229E98F700025C2FB /* AcademicPerformanceFabric.swift in Sources */,
+				E65CEB3C29E9BD7D0025C2FB /* StudentView.swift in Sources */,
 				E6B08A3329E120A3003D7697 /* MyTextField.swift in Sources */,
+				E698710729F3983F001A1344 /* LoginManager.swift in Sources */,
+				E65CEB3F29E9BDB90025C2FB /* StateManager.swift in Sources */,
 				E65CEB2A29E927EA0025C2FB /* TeacherFabric.swift in Sources */,
 				E6B1D4CA29E0246400A1858A /* SignInView.swift in Sources */,
 				E6B08A2D29E11D0C003D7697 /* PolytechLogo.swift in Sources */,
+				E65CEB3729E9BCA40025C2FB /* GroupView.swift in Sources */,
 				E6DC9EC129E31E7E00C9B9F3 /* DisciplineListView.swift in Sources */,
 				E6B1D4C829E0246400A1858A /* KillTheDebtorApp.swift in Sources */,
 				E65CEB1B29E90EEE0025C2FB /* Discipline.swift in Sources */,
 				E65CEB1F29E924840025C2FB /* Student.swift in Sources */,
 				E65CEB1429E90B3E0025C2FB /* ImageView.swift in Sources */,
 				E65CEB3529E9B91B0025C2FB /* GroupListView.swift in Sources */,
+				E65CEB3A29E9BD730025C2FB /* StudentListView.swift in Sources */,
 				E65CEB2129E925910025C2FB /* AcademicPerformance.swift in Sources */,
 				E65CEB3029E98B5F0025C2FB /* StudentFabric.swift in Sources */,
 				E65CEB1929E90D4D0025C2FB /* Teacher.swift in Sources */,

@@ -8,13 +8,10 @@
 import SwiftUI
 
 struct DisciplineListView: View {
-    
-    let teacher = TeacherFabric.shared.getTeacherArsh()
-    
-    
+    let teacher: Teacher
     var body: some View {
         NavigationView {
-            List(teacher.getDisciplines()) { discipline in
+            List(teacher.getDisciplines() ?? []) { discipline in
                 NavigationLink {
                     GroupListView(discipline: discipline)
                 } label: {
@@ -22,7 +19,7 @@ struct DisciplineListView: View {
                 }
             }
         }
-        .navigationTitle("\(teacher.getFirstname()) \(teacher.getLastname())")
+        .navigationTitle("\(teacher.getFirstname() ?? "") \(teacher.getLastname() ?? "")")
         .navigationBarTitleDisplayMode(.large)
     }
 }
@@ -30,6 +27,6 @@ struct DisciplineListView: View {
 
 struct DisciplineListView_Previews: PreviewProvider {
     static var previews: some View {
-        DisciplineListView()
+        DisciplineListView(teacher: TeacherFabric.shared.getTeacherKatash())
     }
 }

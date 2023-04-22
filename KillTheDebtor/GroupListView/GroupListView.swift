@@ -15,15 +15,12 @@ struct GroupListView: View {
                 NavigationLink {
                     Text(group.getTitle())
                 } label: {
-                    VStack (alignment: .leading) {
-                        Text(group.getTitle()).padding(.bottom, 5)
-                        Text("Количество задолженников: \(group.getStudents().count)")
-                    }
+                   GroupView(group: group)
                 }
             }
         }
         .navigationTitle(discipline.getTitle())
-        .navigationBarTitleDisplayMode(.large)
+        .navigationBarTitleDisplayMode(.inline)
     }
 }
 

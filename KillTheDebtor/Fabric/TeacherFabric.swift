@@ -90,4 +90,8 @@ public class TeacherFabric {
     func getPetrov() -> Teacher {
         return petrov
     }
+    
+    func getTeachers() -> [Teacher] {
+        return [arsh, katash, malan, buch, petrov]
+    }
 }
